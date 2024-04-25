@@ -28,10 +28,10 @@ class App {
     }
 
     private function loadFunctions() {
-        if(!file_exists(__DIR__ . '/resources/functions/main_functions.php')) {
+        if(!file_exists(FUNCTIONS . 'main_functions.php')) {
             die('No se encontro el archivo de funciones de usuario main_functions.php');
         }
-        require_once __DIR__ . '/resources/functions/main_functions.php';
+        require_once FUNCTIONS . 'main_functions.php';
     }
 
     private function initAutoloader() {

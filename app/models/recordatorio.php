@@ -2,9 +2,7 @@
 
 namespace app\models;
 
-use app\classes\DB;
-
-class recordatorio extends DB{
+class recordatorio extends Model {
     public function __construct() {
         parent::__construct();
         $this->campos = ["title", "content"];

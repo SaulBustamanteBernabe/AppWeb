@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-class ErrorController {
+class ErrorController extends Controller {
     public function __construct() {
         
     }
