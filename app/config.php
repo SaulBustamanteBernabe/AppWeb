@@ -12,7 +12,7 @@ define('DB_PASS', IS_LOCAL ? '' : 'REMOTE PASSWORD');
 define('DB_NAME', IS_LOCAL ? 'prueba' : 'REMOTE DBNAME');
 
 define('CLASSES',       ROOT . 'classes' . DS);
-define('CLASSES_PATH',  ROOT . '..' . DS);
+define('CLASSES_PATH',  ROOT . '..' . DS); // Constate Utilizada Por El Autoloader
 define('RESOURCES',     ROOT . 'resources' . DS);
 define('LAYOUTS',       RESOURCES . 'layouts' . DS);
 define('VIEWS',         RESOURCES . 'views' . DS);

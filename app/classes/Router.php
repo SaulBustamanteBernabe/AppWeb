@@ -9,8 +9,7 @@ use app\controllers\ErrorController as ErrorController;
 class Router {
     private $uri = "";
 
-    public function __construct()
-    {
+    public function __construct() {
         
     }
 
@@ -21,7 +20,7 @@ class Router {
         $params     = $this->getParams();
         switch($controller){
             case 'HomeController':
-                $controller = new Home();break;
+                $controller = new Home(); break;
             default :
                 $controller = new ErrorController();
                 $action = 'error404';
